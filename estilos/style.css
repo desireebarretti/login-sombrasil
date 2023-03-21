@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+:root {
+    --cor-azul-detalhes: #1701a713; 
+    --cor-azul: #1701A7;
+    --cor-roxo: #540853;
+    --cor-rosa: #b9156c;
+    --cor-laranja: #F9A455;
+    --cor-branco: #d9d8d8;
+    --cor-preto: #171717e2;
+    --font-destaque: 'Righteous', cursive;
+    --font-texto: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, main {
+    font-family: var(--font-texto);
+    color: var(--cor-branco);
+    background-color: var(--cor-branco);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+}
+
+h1 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px 6px var(--cor-preto);
+}
+
+#formulario {
+    background-image: linear-gradient(to right, var(--cor-azul), var(--cor-roxo), var(--cor-rosa));
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 6px var(--cor-preto);
+}   
+
+form {
+    display: inline-block;    
+}
+
+.input>#input-login,
+.input>#input-senha {
+    width: 42vw;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-branco);
+    display: inline;
+    margin: auto;
+    padding-left: 1em;
+    align-items: center;
+    transform: translateY(-8px);
+}
+
+.input>#input-login:focus-within,
+.input>#input-senha:focus-within {
+    border: 3px solid var(--cor-laranja);
+    outline: none;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-size: 0.9em;
+}
+
+#btn-entrar {
+    width: 30vw;
+    margin-top: 1em;
+    text-align: center;
+    height: 2em;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--cor-branco);
+    margin-left: 27%;
+    cursor: pointer;
+    font-family: var(--font-destaque);
+    color: var(--cor-preto);
+}
+
+#btn-entrar:hover {
+    background-color: var(--cor-azul-detalhes);
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-branco);
+    transition: 0.7s;
+}
+
+#imagem {
+    background: var(--cor-branco) url(../img/back-recortada-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 205px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 30px;
+}
+
+.span-input {
+    float: center;
+    margin-left: 8vw;
+}
+
+#btn-esqueci {
+    margin-top: 1em;
+    font-size: 0.5em;
+    color: var(--cor-branco);
+}
+

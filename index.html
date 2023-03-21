@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Righteous&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <title>Som Brasil</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+
+            <div id="formulario" method="post">
+                <div id="imagem">
+                </div>
+                <div id="texto-form">
+                    <h1>Som Brasil&reg;</h1>
+                    <p>Seja bem-vindo(a) ao Som Brasil!</p>
+                </div>
+
+                <form action="login.php" autocomplete="on">
+                    <div class="span-input">
+
+                        <div class="input">
+                            <label for="input-login">
+                                <span class="material-symbols-outlined">login</span>
+                            </label>
+
+                            <input type="email" placeholder="usuario@dominio.com" id="input-login" autocomplete="email" required>
+                            <br>
+                        </div>
+
+                        <div class="input">
+                            <label for="input-senha">
+                                <span class="material-symbols-outlined">key</span>
+                            </label>
+                            
+                            <input type="password" id="input-senha" pattern="[a-z][A-Z][1-9]" min-length="8" max-length="15" autocomplete="current-password" required>
+                            <br>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Entrar" id="btn-entrar"> 
+            
+                    <a href="#" id="btn-esqueci">Esqueci a senha</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
